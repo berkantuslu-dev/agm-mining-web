@@ -1,0 +1,15 @@
+# Server / hosting config
+.user.ini
+web.config
+
+# Uploads / cache (just in case)
+uploads/
+logs/
+cache/
+tmp/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

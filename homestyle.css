@@ -1,0 +1,319 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+  }
+  
+  /* Hero Section Styles */
+  .hero {
+    position: relative;
+    height: 100vh; /* Full viewport height */
+    background: url('./pics/hero.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
+  }
+  
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for text visibility */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    color: white;
+  }
+  
+  .hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin: 0 auto 30px;
+    line-height: 1.5;
+  }
+  
+  .hero-buttons .btn {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1rem;
+    text-decoration: none;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    background: #f4a261; /* Primary button color */
+    margin-right: 10px;
+    transition: background 0.3s ease;
+  }
+  
+  .hero-buttons .btn:hover {
+    background: #e76f51;
+  }
+  
+  .hero-buttons .btn-secondary {
+    background: #2a9d8f; /* Secondary button color */
+  }
+  
+  .hero-buttons .btn-secondary:hover {
+    background: #21867a;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hero-content h1 {
+      font-size: 2.5rem;
+    }
+    .hero-content p {
+      font-size: 1rem;
+    }
+    .hero-buttons .btn {
+      padding: 10px 20px;
+      font-size: 0.9rem;
+    }
+  }
+  
+
+
+  /* Genel Container */
+.introduction-section {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+  }
+  
+  .introduction-section h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .introduction-section p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 40px;
+  }
+  
+  /* Özellikler */
+  .features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .feature {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 280px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .feature:hover {
+    transform: translateY(-10px);
+  }
+  
+  .feature i.icon {
+    font-size: 2.5rem;
+    color: #0f52ba;
+    margin-bottom: 15px;
+  }
+  
+  .feature h3 {
+    font-size: 1.25rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .feature p {
+    font-size: 0.95rem;
+    color: #666;
+  }
+  
+  /* Responsive Tasarım */
+  @media (max-width: 768px) {
+    .features {
+      flex-direction: column;
+      gap: 30px;
+    }
+  
+    .feature {
+      width: 100%;
+    }
+  }
+  
+
+
+
+  /* Genel Tasarım */
+.minerals-section {
+    padding: 60px 20px;
+    background-color: #fff;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+  }
+  
+  .minerals-section h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .minerals-section p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 40px;
+  }
+  
+  /* Galeri Stili */
+  .mineral-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .mineral-item {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .mineral-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .mineral-item img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .mineral-item h3 {
+    font-size: 1.25rem;
+    color: #333;
+    padding: 10px;
+    background: #333;
+    color: #fff;
+  }
+  
+  /* Responsive Tasarım */
+  @media (max-width: 768px) {
+    .mineral-gallery {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+
+
+  /* Açıklama Bölümü Stilleri */
+.description-section {
+    padding: 40px 20px;
+    background-color: #f0f4f8;
+    text-align: center;
+    color: #333;
+  }
+  
+  .description-section h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .description-section p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Responsive Tasarım */
+  @media (max-width: 768px) {
+    .description-section p {
+      font-size: 0.95rem;
+    }
+  }
+  
+
+
+  /* Yatırım Fırsatları Bölümü */
+.investment-opportunities {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    border-top: 1px solid #ddd;
+  }
+  
+  .investment-opportunities h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .investment-opportunities p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #555;
+  }
+  
+  /* Responsive Tasarım */
+  @media (max-width: 768px) {
+    .investment-opportunities h2 {
+      font-size: 1.5rem;
+    }
+  
+    .investment-opportunities p {
+      font-size: 0.95rem;
+    }
+  
+    .cta-button {
+      padding: 10px 15px;
+      font-size: 0.9rem;
+    }
+  }
+
+  
+
+  
